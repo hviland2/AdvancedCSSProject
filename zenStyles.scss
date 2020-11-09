@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
-$primaryColor: #E6E3DB;
-$accentColor1:#96816E;
-$accentColor2:#C2A851;
-
-$headerFont:  'Open Sans', sans-serif;
-$bodyFont: 'Merriweather', serif;
+@use './variables' as *; 
 
 header{
     height: 300px;
