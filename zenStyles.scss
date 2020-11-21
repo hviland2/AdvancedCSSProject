@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
 $primaryColor: beige;
-$accentColor1:#96816E;
-$accentColor2:#1e4625;
+$accentColor1:#E1B88E;
+$accentColor2:#426A5A;
 
 $headerFont:  'Open Sans', sans-serif;
 $bodyFont: 'Merriweather', serif;
@@ -28,12 +28,15 @@ header{
 h2{
     font-family: $headerFont;
     @include upperCase();
+    padding-top: 20px;
+    margin-left: 10px;
     
 }
 p{
     font-family: $bodyFont;
     font-size: 12px;
-    margin-top: -15px;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 body{
     background-color: $primaryColor;
@@ -45,12 +48,11 @@ body{
 #information{
     display: flex;
     // padding-top: 80px;
-    padding-left: 30px;
     line-height: 2.0;
 }
 #link{
     //padding-left: 60px;
-    background-color: #1e4625;
+    background-color: $accentColor2;
     color: white;
     padding-right: 3em;
     /* max-width: 100%; */
@@ -87,7 +89,26 @@ nav{
      opacity: 1;
      transition: 1.5s;
 }
-  
+.backgroundChange{
+    background-color: #A4CBA9;
+    width: 100%;
+    padding-top: 10px;
+}
+.textLink{
+font-size: 12px;
+}
+a{
+    font-size: 15px;
+    opacity: .8;
+    transition: 1.5s;
+}
+.section{
+    padding-top: 30px;
+}
+a:hover{
+    opacity: 1;
+    transition: 1.5s;
+}
 
 footer{
     background-color: $accentColor1;
@@ -106,7 +127,7 @@ footer p{
 #text{
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-right: 80px;
+
 }
 #link a{
     color: white;
@@ -120,8 +141,9 @@ footer p{
     max-width: 250px;
     height: auto;
     float: left;
-    margin-top: 10px;
+    margin-top:40px;
     margin-right: 25px;
+    margin-left: 20px;
     border-radius: 50%
 }
 /*

@@ -19,12 +19,15 @@ header h1 {
 h2 {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
+  padding-top: 20px;
+  margin-left: 10px;
 }
 
 p {
   font-family: "Merriweather", serif;
   font-size: 12px;
-  margin-top: -15px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 body {
@@ -39,12 +42,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 30px;
   line-height: 2.0;
 }
 
 #link {
-  background-color: #1e4625;
+  background-color: #426A5A;
   color: white;
   padding-right: 3em;
   /* max-width: 100%; */
@@ -91,8 +93,35 @@ nav {
   transition: 1.5s;
 }
 
+.backgroundChange {
+  background-color: #A4CBA9;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.textLink {
+  font-size: 12px;
+}
+
+a {
+  font-size: 15px;
+  opacity: .8;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.section {
+  padding-top: 30px;
+}
+
+a:hover {
+  opacity: 1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
 footer {
-  background-color: #96816E;
+  background-color: #E1B88E;
   text-align: center;
   height: 80px;
   color: beige;
@@ -109,7 +138,6 @@ footer p {
 #text {
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-right: 80px;
 }
 
 #link a {
@@ -125,8 +153,9 @@ footer p {
   max-width: 250px;
   height: auto;
   float: left;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-right: 25px;
+  margin-left: 20px;
   border-radius: 50%;
 }
 
