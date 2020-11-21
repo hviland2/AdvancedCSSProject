@@ -67,8 +67,7 @@ nav {
 }
 
 .designer-name {
-  border: none;
-  text-align: center;
+  font-size: 15px;
   opacity: .8;
   -webkit-transition: 1.5s;
   transition: 1.5s;
@@ -76,6 +75,20 @@ nav {
 
 .designer-name:hover {
   opacity: 0.3;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.design-name {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: .7;
+}
+
+.design-name:hover {
+  opacity: 1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 footer {

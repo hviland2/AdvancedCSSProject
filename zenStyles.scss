@@ -70,15 +70,23 @@ nav{
 }
 
 .designer-name{
-  border: none;
-  text-align: center;
+  font-size: 15px;
   opacity: .8;
   transition: 1.5s;
   }
   
-  .designer-name:hover{
+.designer-name:hover{
     opacity: 0.3;
-  }
+    transition: 1.5s;
+}
+.design-name{
+    transition: 1.5s;
+    opacity: .7;
+}
+.design-name:hover{
+     opacity: 1;
+     transition: 1.5s;
+}
   
 
 footer{
