@@ -28,6 +28,7 @@ p {
   font-size: 12px;
   margin-right: 20px;
   margin-left: 10px;
+  padding-bottom: 10px;
 }
 
 body {
@@ -94,13 +95,21 @@ nav {
 }
 
 .backgroundChange {
-  background-color: #A4CBA9;
+  background-color: rgba(164, 203, 169, 0.3);
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .textLink {
   font-size: 12px;
+  color: black;
+}
+
+.textLink:hover {
+  opacity: .3;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 a {

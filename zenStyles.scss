@@ -37,6 +37,7 @@ p{
     font-size: 12px;
     margin-right: 20px;
     margin-left: 10px;
+    padding-bottom: 10px;
 }
 body{
     background-color: $primaryColor;
@@ -90,12 +91,18 @@ nav{
      transition: 1.5s;
 }
 .backgroundChange{
-    background-color: #A4CBA9;
+    background-color:rgba(164, 203, 169, 0.3);
     width: 100%;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .textLink{
 font-size: 12px;
+color: black;
+}
+.textLink:hover{
+    opacity: .3;
+     transition: 1.5s;
 }
 a{
     font-size: 15px;
