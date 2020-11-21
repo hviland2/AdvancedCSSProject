@@ -69,6 +69,18 @@ nav{
     width: auto;
 }
 
+.designer-name{
+  border: none;
+  text-align: center;
+  opacity: .8;
+  transition: 1.5s;
+  }
+  
+  .designer-name:hover{
+    opacity: 0.3;
+  }
+  
+
 footer{
     background-color: $accentColor1;
     text-align: center;
