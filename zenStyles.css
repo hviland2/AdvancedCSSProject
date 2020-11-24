@@ -10,12 +10,6 @@ header .banner {
   height: 100%;
 }
 
-header h1 {
-  font-size: 50px;
-  color: #59212C;
-  font-style: italic;
-}
-
 h2 {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
@@ -94,9 +88,35 @@ footer p {
 }
 
 #text {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 80px;
   padding-right: 80px;
+  -webkit-animation: colors 4s infinite;
+          animation: colors 4s infinite;
+}
+
+@-webkit-keyframes colors {
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: blue;
+  }
+}
+
+@keyframes colors {
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: blue;
+  }
 }
 
 #link a {
