@@ -1,132 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
-header {
-  height: 300px;
-  width: 100%;
-}
-
-header .banner {
-  width: 100%;
-  height: 100%;
-}
-
-header h1 {
-  font-size: 50px;
-  color: #59212C;
-  font-style: italic;
-}
-
-h2 {
+header h1, h2 {
+  text-align: center;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  padding-top: 20px;
-  margin-left: 10px;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
   font-family: "Merriweather", serif;
-  font-size: 12px;
-  margin-right: 20px;
-  margin-left: 10px;
-  padding-bottom: 10px;
 }
 
-body {
-  background-color: beige;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-bottom: 0px;
-  margin-right: auto;
-}
-
-#information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 2.0;
-}
-
-#link {
-  background-color: #426A5A;
-  color: white;
-  padding-right: 3em;
-  /* max-width: 100%; */
-  padding-top: 3em;
-  padding-left: 1.5em;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 10px;
-}
-
-li {
-  width: 300px;
-  margin-bottom: 30px;
-}
-
-nav {
-  width: auto;
-}
-
-.designer-name {
-  font-size: 15px;
-  opacity: .8;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-.designer-name:hover {
-  opacity: 0.3;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-.design-name {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  opacity: .7;
-}
-
-.design-name:hover {
-  opacity: 1;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-.backgroundChange {
-  background-color: rgba(164, 203, 169, 0.3);
+header {
+  background-image: url("banner-zen-garden.jpg.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: 300px;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.textLink {
-  font-size: 12px;
-  color: black;
-}
-
-.textLink:hover {
-  opacity: .3;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-a {
-  font-size: 15px;
-  opacity: .8;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-.section {
-  padding-top: 30px;
-}
-
-a:hover {
-  opacity: 1;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
 }
 
 footer {
@@ -136,49 +30,4 @@ footer {
   color: beige;
   margin-bottom: auto;
 }
-
-footer p {
-  padding-top: 10px;
-  line-height: 1.6;
-  font-family: "Open Sans", sans-serif;
-  margin-top: 0%;
-}
-
-#text {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-#link a {
-  color: white;
-  font-family: "Merriweather", serif;
-}
-
-.design-name {
-  text-decoration: none;
-}
-
-.lotus {
-  max-width: 250px;
-  height: auto;
-  float: left;
-  margin-top: 40px;
-  margin-right: 25px;
-  margin-left: 20px;
-  border-radius: 50%;
-}
-
-/*
-.column{
-   float: left;
-  padding: 15px;
-  
-}
-.row::after {
- content: "";
-clear: both;
-display: table;
-}
-
-*/
 /*# sourceMappingURL=zenStyles.css.map */
