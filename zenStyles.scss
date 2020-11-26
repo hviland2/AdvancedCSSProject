@@ -15,7 +15,8 @@ header h1, h2{
 h3{
     font-family: $headerFont;
 }
-p{
+
+p {
     font-family: $bodyFont;
 }
 header{
@@ -26,7 +27,7 @@ header{
     background-position: center;
 
     height: 300px;
-    width: 100%;
+    width: 100%
 }
 footer{
     background-color: $accentColor1;
@@ -38,3 +39,5 @@ footer{
 body{
     background-color: $primaryColor;
 }
+.page-wrapper{
+    display: flex;
