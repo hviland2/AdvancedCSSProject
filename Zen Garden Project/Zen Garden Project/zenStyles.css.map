@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,4GAAI;AAUZ,AAAA,KAAK,CAAA;EACD,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;CACjC",
-    "sources": [
-        "zenStyles.scss"
-    ],
-    "names": [],
-    "file": "zenStyles.css"
-}
