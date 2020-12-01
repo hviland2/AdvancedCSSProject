@@ -1,163 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@use "./variables" as *;
+@use "./layout" as *;
 
 $primaryColor: beige;
-$accentColor1:#96816E;
-$accentColor2:#1e4625;
+$accentColor1:#E1B88E;
+$accentColor2:#426A5A;
 
-$headerFont: 'Open Sans',
-sans-serif;
-$bodyFont: 'Merriweather',
-serif;
+$headerFont:  'Open Sans', sans-serif;
+$bodyFont: 'Merriweather', serif;
 
-@mixin upperCase {
-    text-transform: uppercase;
-
-}
-
-header {
-    height: 300px;
-    width: 100%;
-
-    .banner {
-        width: 100%;
-        height: 100%;
-    }
-
-}
-
-
-
-
-h2 {
+header h1, h2{
+    text-align: center;
     font-family: $headerFont;
-    @include upperCase();
-
+}
+h3{
+    font-family: $headerFont;
 }
 
 p {
     font-family: $bodyFont;
-    font-size: 12px;
-    margin-top: -15px;
+}
+header{
+    background-image: url("banner-zen-garden.jpg.gif");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    grid-column: 1/3;
 }
 
-body {
-    background-color: $primaryColor;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-bottom: 0px;
-    margin-right: auto;
-}
-
-#information {
-    display: flex;
-    // padding-top: 80px;
-    padding-left: 30px;
-    line-height: 2.0;
-}
-
-#link {
-    //padding-left: 60px;
-    background-color: #1e4625;
-    color: white;
-    padding-right: 3em;
-    /* max-width: 100%; */
-    padding-top: 3em;
-    padding-left: 1.5em;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 10px;
-}
-
-li {
-    width: 300px;
-    margin-bottom: 30px;
-}
-
-nav {
-    width: auto;
-}
-
-.designer-name {
-    border: none;
-    text-align: center;
-    opacity: .8;
-    transition: 1.5s;
-}
-
-.designer-name:hover {
-    opacity: 0.3;
-}
-
-
-footer {
+footer{
     background-color: $accentColor1;
     text-align: center;
     height: 80px;
     color: $primaryColor;
     margin-bottom: auto;
-
+    grid-column: 1/2;
+    grid-row: 3;
+}
+body{
+    background-color: $primaryColor;
 }
 
-footer p {
-    padding-top: 10px;
-    line-height: 1.6;
-    font-family: $headerFont;
-    margin-top: 0%;
-}
-
-#text {
-    padding-top: 20px;
-    padding-bottom: 80px;
-    padding-right: 80px;
-    animation: colors 4s infinite;
-}
-
-@keyframes colors {
-    25% {
-        background-color: red;
-    }
-
-    50% {
-        background-color: green;
-    }
-
-    75% {
-        background-color: blue;
-    }
-}
-
-#link a {
-    color: white;
-    font-family: $bodyFont;
-}
-
-.design-name {
-    text-decoration: none;
-
-}
-
-.lotus {
-    max-width: 250px;
-    height: auto;
-    float: left;
-    margin-top: 10px;
-    margin-right: 25px;
-    border-radius: 50%
-}
-
-/*
-.column{
-   float: left;
-  padding: 15px;
-  
-}
-.row::after {
- content: "";
-clear: both;
-display: table;
-}
-
-*/

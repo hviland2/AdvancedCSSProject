@@ -1,0 +1,21 @@
+.main-supporting{
+    grid-column: 1/2;
+    grid-row: 4;
+
+}
+
+.page-wrapper{
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+.intro{
+    display: contents;
+}
+.sidebar{
+    grid-column: 2/3;
+    grid-row: 2/4; 
+}
+.preamble{
+    grid-column: 1/2;
+    grid-row: 3;
+}
