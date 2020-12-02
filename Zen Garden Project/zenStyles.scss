@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+$primaryColor: beige;
+$accentColor1:#96816E;
+$accentColor2:#1e4625;
+
+$headerFont:  'Open Sans', sans-serif;
+$bodyFont: 'Merriweather', serif;
+@mixin upperCase{
+    text-transform: uppercase;
+    
+}
+
+header{
+    height: 300px;
+    width: 100%;
+    .banner{
+    width: 100%;
+    height: 100%;
+    }
+    h1{
+        font-size: 50px;
+        color: #59212C;
+        font-style: italic;
+    }  
+}
+h2{
+    font-family: $headerFont;
+    @include upperCase();
+    
+}
+p{
+    font-family: $bodyFont;
+    font-size: 12px;
+    margin-top: -15px;
+}
+body{
+    background-color: $primaryColor;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-right: auto;
+}
+#information{
+    display: flex;
+    // padding-top: 80px;
+    padding-left: 30px;
+    line-height: 2.0;
+}
+#link{
+    //padding-left: 60px;
+    background-color: #1e4625;
+    color: white;
+    padding-right: 3em;
+    /* max-width: 100%; */
+    padding-top: 3em;
+    padding-left: 1.5em;
+}
+ul{
+    list-style-type:none ;
+    padding-left: 10px;
+}
+li{
+    width: 300px;
+    margin-bottom: 30px;
+}
+nav{
+    width: auto;
+}
+
+footer{
+    background-color: $accentColor1;
+    text-align: center;
+    height: 80px;
+    color: $primaryColor;
+    margin-bottom: auto;
+    
+}
+footer p{
+    padding-top: 10px;
+    line-height: 1.6;
+    font-family: $headerFont;
+    margin-top: 0%;
+}
+#text{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 80px;
+}
+#link a{
+    color: white;
+    font-family: $bodyFont;
+}
+.design-name{
+    text-decoration: none;
+
+}
+.lotus{
+    max-width: 250px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-right: 25px;
+    border-radius: 50%
+}
+/*
+.column{
+   float: left;
+  padding: 15px;
+  
+}
+.row::after {
+ content: "";
+clear: both;
+display: table;
+}
+
