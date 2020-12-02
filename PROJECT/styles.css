@@ -3,7 +3,7 @@
 @use "variables" as *;
 header {
   background-image: url("banner-zen-garden.jpg.gif");
-  -webkit-background-size: cover;
+  background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-position: center;
@@ -22,6 +22,7 @@ header {
   grid-column: 1/2;
   -ms-grid-row: 2;
   grid-row: 2;
+  display: block;
 }
 
 footer {
@@ -42,8 +43,8 @@ body {
 .page-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 200px;
-      grid-template-columns: auto 200px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
 }
 
 .intro {
@@ -51,19 +52,16 @@ body {
 }
 
 .sidebar {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 2 / auto;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
+  -ms-grid-row-span: 3;
+  grid-row: 2 / 5;
 }
 
 .preamble {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 3;
-  grid-row: 3;
+  grid-column: 1 / 2;
+  grid-row: 3 / auto;
 }
 /*# sourceMappingURL=styles.css.map */
