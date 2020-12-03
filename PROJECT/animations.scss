@@ -1,0 +1,33 @@
+.designer-name{
+    /*animation*/
+    @include designerName;
+    }
+
+  .designer-name:hover{
+    /*animation*/
+  @include designHover;
+  }
+  .design-name{
+    /*animation*/
+    @include designName;
+  }
+  .design-name:hover{
+    /*animation*/
+    @include designHover;
+  }
+  .design-archives a{
+    /*animation*/
+    @include designerName;
+  }
+  .zen-resources a{
+    /*animation*/
+    @include designerName;
+  }
+  .design-archives a:hover{
+    /*animation*/
+    @include designHover;
+  }
+  .zen-resources a:hover{
+    /*animation*/
+    @include designHover;
+  }

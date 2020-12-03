@@ -1,2 +1,28 @@
+$primaryColor: beige;
+$accentColor1: #96816E;
+$accentColor2: #1e4625;
 
+$headerFont:  'Open Sans', sans-serif;
+$bodyFont: 'Merriweather', serif;
+@mixin designerName{
+  font-size: 17px;
+  color:black;
+  opacity: .8;
+  transition: 2s;
+}
+@mixin designName{
+  color: black;
+    font-size: 20px;
+      transition: 2s;
+      opacity: .8;
+      text-decoration: none;
+}
+@mixin designHover{
+  transition: 1.5s;
+    opacity: .2;
+    color: white;
+}
+@mixin upperCase{
+  text-transform: uppercase;
+}
 
