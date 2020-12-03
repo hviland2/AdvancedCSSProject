@@ -3,6 +3,42 @@
 @import url(c:\Users\hvila\Documents\GitHub\zenGarden\Zen Garden Project\AdvancedCSSProject\PROJECT\placement.css);
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+abbr[title] {
+  /*style*/
+  text-decoration: none;
+}
+
+body {
+  /*style*/
+  background-color: beige;
+}
+
+.sidebar {
+  /*style*/
+  background-color: #607a60;
+  line-height: 2em;
+  padding-right: 30px;
+}
+
+.sidebar h3 {
+  text-align: center;
+}
+
+.sidebar h3 {
+  color: beige;
+}
+
+h3 {
+  /*style*/
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  /*style*/
+  font-family: "Merriweather", serif;
+}
+
 header {
   /*positioning*/
   background-image: url("zen garden banner.jpg");
@@ -20,10 +56,16 @@ header {
   grid-column: 1/3;
 }
 
+header h1, h2 {
+  padding-left: 15em;
+  font-size: 40px;
+  margin-right: 70px;
+  padding-top: 5px;
+}
+
 /*positioning*/
 .intro h1, h2 {
   font-family: "Open Sans", sans-serif;
-  padding-left: 310px;
 }
 
 .main-supporting {
@@ -33,11 +75,6 @@ header {
   grid-column: 1/2;
   -ms-grid-row: 2;
   grid-row: 2;
-}
-
-abbr[title] {
-  /*style*/
-  text-decoration: none;
 }
 
 footer {
@@ -50,106 +87,12 @@ footer {
   grid-column: 1/2;
   -ms-grid-row: 3;
   grid-row: 3;
-}
-
-body {
-  /*style*/
-  background-color: beige;
-}
-
-.sidebar {
-  /*style*/
-  background-color: #607a60;
-  line-height: 2em;
-}
-
-.sidebar h3 {
-  text-align: center;
+  background-color: #a0785a;
 }
 
 ul {
   /*positioning*/
   list-style-type: none;
-}
-
-.designer-name {
-  /*animation*/
-  font-size: 17px;
-  color: black;
-  opacity: .8;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.designer-name:hover {
-  /*animation*/
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  opacity: .2;
-  color: white;
-}
-
-.design-name {
-  /*animation*/
-  color: black;
-  font-size: 20px;
-  -webkit-transition: 2s;
-  transition: 2s;
-  opacity: .8;
-  text-decoration: none;
-}
-
-.design-name:hover {
-  /*animation*/
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  opacity: .2;
-  color: white;
-}
-
-.design-archives a {
-  /*animation*/
-  font-size: 17px;
-  color: black;
-  opacity: .8;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.zen-resources a {
-  /*animation*/
-  font-size: 17px;
-  color: black;
-  opacity: .8;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.design-archives a:hover {
-  /*animation*/
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  opacity: .2;
-  color: white;
-}
-
-.zen-resources a:hover {
-  /*animation*/
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  opacity: .2;
-  color: white;
-}
-
-h3 {
-  /*style*/
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-}
-
-p {
-  /*style*/
-  font-family: "Merriweather", serif;
 }
 
 .page-wrapper {
@@ -162,7 +105,7 @@ p {
 
 .page-wrapper a {
   font-size: 17px;
-  color: black;
+  color: #490707;
   opacity: .8;
   -webkit-transition: 2s;
   transition: 2s;
@@ -171,13 +114,14 @@ p {
 .page-wrapper a:hover {
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  opacity: .2;
-  color: white;
+  opacity: .6;
+  color: #fdac64;
 }
 
 .intro {
   /*positioning*/
   display: contents;
+  margin: 30px;
 }
 
 .sidebar {
@@ -196,5 +140,16 @@ p {
   grid-column: 1/2;
   -ms-grid-row: 3;
   grid-row: 3;
+  padding: 30px;
+}
+
+body {
+  /*positioning*/
+  margin: 0;
+}
+
+.summary, .explanation, .participation, .benefits, .requirements {
+  /*positioning*/
+  padding: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
