@@ -12,12 +12,14 @@ $accentColor2: #1e4625;
 $headerFont:  'Open Sans', sans-serif;
 $bodyFont: 'Merriweather', serif;
 @mixin designerName{
+  font-family: $bodyFont;
   font-size: 17px;
   color:rgb(73, 7, 7);
   opacity: .8;
   transition: 2s;
   }
 @mixin designName{
+  font-family: $bodyFont;
   color: rgb(73, 7, 7);
     font-size: 20px;
       transition: 2s;
@@ -73,10 +75,9 @@ p{
 
 header {
   /*positioning*/
-  background-image: url("zen garden banner.jpg");
+  background-image: url("");
   background-size: cover;
   background-repeat: none;
-  object-fit: cover;
   width: 100%;
   height: 250px;
   grid-column: 1/2;
