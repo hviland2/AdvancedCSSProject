@@ -1,2 +1,31 @@
+$primaryColor: #ffe4c1;
+$accentColor1: #96816E;
+$accentColor2: #1e4625;
 
+$headerFont:  'Open Sans', sans-serif;
+$bodyFont: 'Merriweather', serif;
+@mixin designerName{
+  font-family: $bodyFont;
+  color:rgb(73, 7, 7);
+  opacity: .8;
+  transition: 2s;
+  }
+@mixin designName{
+  font-family: $bodyFont;
+  color: rgb(73, 7, 7);
+      transition: 2s;
+      opacity: .8;
+      text-decoration: none;
+}
+@mixin designHover{
+  transition: 1.5s;
+    opacity: .6;
+    color: rgb(253, 172, 100);
+}
+@mixin upperCase{
+  text-transform: uppercase;
+}
+@mixin padding{
+  padding: 30px;
+}
 
