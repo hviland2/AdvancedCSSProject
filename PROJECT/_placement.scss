@@ -71,10 +71,22 @@ header {
     /*positioning*/
     grid-column: 1/2;
     grid-row: 3;
-    @include padding;
-  
-  
-   
+    @include padding; 
+    display: grid; 
+    grid-template-columns: 200px auto;
+  }
+  .preamble::before{
+    grid-row: 1/5;
+    align-self: center;
+    content: "";
+    background-image: url('image-1.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    float: left;
+
   }
   body{
     /*positioning*/

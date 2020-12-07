@@ -1,11 +1,9 @@
-@use 'placement.css';
-@use 'animations.css';
-@use 'variables.css';
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
+@import 'variables';
+@import 'placement';
+@import 'animations';
 
 
 abbr[title] {
@@ -13,11 +11,9 @@ abbr[title] {
   text-decoration: none;
 }
 
-
-
 body {
   /*style*/
-  background-color: #dfb987;
+  background-color: $primaryColor;
 }
 .sidebar{
   /*style*/

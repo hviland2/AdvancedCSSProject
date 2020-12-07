@@ -1,41 +1,6 @@
-@import url(c:\Users\hvila\Documents\GitHub\zenGarden\Zen Garden Project\AdvancedCSSProject\PROJECT\animations.css);
-@import url(c:\Users\hvila\Documents\GitHub\zenGarden\Zen Garden Project\AdvancedCSSProject\PROJECT\variables.css);
-@import url(c:\Users\hvila\Documents\GitHub\zenGarden\Zen Garden Project\AdvancedCSSProject\PROJECT\placement.css);
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-abbr[title] {
-  /*style*/
-  text-decoration: none;
-}
-
-body {
-  /*style*/
-  background-color: #dfb987;
-}
-
-.sidebar {
-  /*style*/
-  background-color: #607a60;
-  line-height: 2em;
-  padding-right: 30px;
-}
-
-.sidebar h3 {
-  text-align: center;
-}
-
-h3 {
-  /*style*/
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-}
-
-p {
-  /*style*/
-  font-family: "Merriweather", serif;
-}
-
 header {
   /*positioning*/
   background-image: url("koi-fish.gif");
@@ -83,6 +48,7 @@ footer {
   -ms-grid-row: 3;
   grid-row: 3;
   background-color: #a0785a;
+  padding-top: 40px;
 }
 
 ul {
@@ -119,12 +85,6 @@ ul {
   white-space: pre;
 }
 
-/*style*/
-.design-name {
-  font-size: 20px;
-  text-decoration: none;
-}
-
 .intro {
   /*positioning*/
   display: contents;
@@ -141,17 +101,6 @@ ul {
   padding: 30px;
 }
 
-/*style*/
-.sidebar h3 {
-  color: #ffe4c1;
-  font-size: 25px;
-}
-
-.sidebar li {
-  padding-top: 20px;
-  color: #490707;
-}
-
 .preamble {
   /*positioning*/
   -ms-grid-column: 1;
@@ -160,6 +109,27 @@ ul {
   -ms-grid-row: 3;
   grid-row: 3;
   padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
+}
+
+.preamble::before {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  content: "";
+  background-image: url("image-1.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  float: left;
 }
 
 body {
@@ -170,5 +140,123 @@ body {
 .summary, .explanation, .participation, .benefits, .requirements {
   /*positioning*/
   padding: 30px;
+}
+
+.designer-name {
+  /*animation*/
+  font-family: "Merriweather", serif;
+  color: #490707;
+  opacity: .8;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.designer-name:hover {
+  /*animation*/
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: .6;
+  color: #fdac64;
+}
+
+.design-name {
+  /*animation*/
+  font-family: "Merriweather", serif;
+  color: #490707;
+  -webkit-transition: 2s;
+  transition: 2s;
+  opacity: .8;
+  text-decoration: none;
+}
+
+.design-name:hover {
+  /*animation*/
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: .6;
+  color: #fdac64;
+}
+
+.design-archives a {
+  /*animation*/
+  font-family: "Merriweather", serif;
+  color: #490707;
+  opacity: .8;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.zen-resources a {
+  /*animation*/
+  font-family: "Merriweather", serif;
+  color: #490707;
+  opacity: .8;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.design-archives a:hover {
+  /*animation*/
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: .6;
+  color: #fdac64;
+}
+
+.zen-resources a:hover {
+  /*animation*/
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: .6;
+  color: #fdac64;
+}
+
+abbr[title] {
+  /*style*/
+  text-decoration: none;
+}
+
+body {
+  /*style*/
+  background-color: #ffe4c1;
+}
+
+.sidebar {
+  /*style*/
+  background-color: #607a60;
+  line-height: 2em;
+  padding-right: 30px;
+}
+
+.sidebar h3 {
+  text-align: center;
+}
+
+h3 {
+  /*style*/
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  /*style*/
+  font-family: "Merriweather", serif;
+}
+
+/*style*/
+.design-name {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*style*/
+.sidebar h3 {
+  color: #ffe4c1;
+  font-size: 25px;
+}
+
+.sidebar li {
+  padding-top: 20px;
+  color: #490707;
 }
 /*# sourceMappingURL=styles.css.map */
