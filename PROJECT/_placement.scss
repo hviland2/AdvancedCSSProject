@@ -67,6 +67,19 @@ header {
     grid-row: 2/5;
     @include padding;
   }
+ .benefits{
+    grid-column: 2/3;
+    grid-row: 5;
+    @include padding; 
+    display: grid; 
+    grid-template-columns: 200px auto;
+    column-gap: 30px;
+ }
+ .benefits::before{
+  grid-row: 1/5;
+  content: "";
+}
+ 
   .preamble {
     /*positioning*/
     grid-column: 1/2;
@@ -74,25 +87,84 @@ header {
     @include padding; 
     display: grid; 
     grid-template-columns: 200px auto;
+    column-gap: 30px;
   }
   .preamble::before{
     grid-row: 1/5;
-    align-self: center;
     content: "";
     background-image: url('image-1.jpg');
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     display: inline-block;
     height: 200px;
     width: 200px;
-    float: left;
-
+    margin-top: 20px;
+  }
+  .explanation{
+    grid-column: 1/2;
+    grid-row: 3;
+    @include padding; 
+    display: grid; 
+    grid-template-columns: 200px auto;
+    column-gap: 30px;
+  }
+  .explanation::before{
+    grid-row: 1/5;
+    content: "";
+    background-image: url('image-2.jpg');
+    background-size: cover;
+    border-radius: 10%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .participation{
+    grid-column: 1/2;
+    grid-row: 3;
+    @include padding; 
+    display: grid; 
+    grid-template-columns: 200px auto;
+    column-gap: 30px;
+  }
+  .participation::before{
+    grid-row: 1/5;
+    content: "";
+    background-image: url('image-3.jpg');
+    background-size: cover;
+    border-radius: 10%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .requirements{
+    grid-column: 1/2;
+    grid-row: 3;
+    @include padding; 
+    display: grid; 
+    grid-template-columns: 200px auto;
+    column-gap: 30px;
+  }
+  .requirements::before{
+    grid-row: 1/6;
+    content: "";
+    background-image: url('image-4.png');
+    background-size: cover;
+    border-radius: 10%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
   }
   body{
     /*positioning*/
     margin: 0;
   
   
+  }
+  [role="contentinfo"]{
+    grid-column: 2/3;
   }
   .summary, .explanation, .participation, .benefits, .requirements{
     /*positioning*/
