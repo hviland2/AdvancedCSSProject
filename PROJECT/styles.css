@@ -51,6 +51,15 @@ footer {
   padding-top: 40px;
 }
 
+footer::after {
+  content: "Heidi | Sarah | Idianis";
+  margin: 50px;
+  opacity: .8;
+  color: #490707;
+  text-transform: uppercase;
+  font-family: "Merriweather", serif;
+}
+
 ul {
   /*positioning*/
   list-style-type: none;
@@ -271,10 +280,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 55px;
     margin-top: 10px;
     line-height: 1.2em;
+  }
+  .sidebar h3 {
+    font-size: 15px;
   }
   .page-wrapper {
     -ms-grid-columns: 100%;
@@ -359,6 +371,10 @@ body {
     -ms-grid-column-span: 2;
     grid-column: 1/3;
     display: block;
+    text-align: center;
+  }
+  .preamble p, .explanation p, .participation p, .benefits p, .requirements p {
+    text-align: left;
   }
 }
 
