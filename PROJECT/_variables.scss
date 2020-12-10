@@ -28,4 +28,17 @@ $bodyFont: 'Merriweather', serif;
 @mixin padding{
   padding: 30px;
 }
+@mixin dropdown{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+@mixin hover{
+  display: block;
+      background-color: rgb(103, 129, 103);
+      border-radius: 3%;
+      margin-left: 30px;
+      
+      
 
+}
