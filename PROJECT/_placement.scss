@@ -243,10 +243,12 @@ header {
   text-align: center;
 
 }
-.preamble{
+.preamble, .explanation, .participation, .benefits, .requirements{
   grid-row: 4;
   grid-column: 1/3;
+  display: block;
   }
+  
 }
 
     
